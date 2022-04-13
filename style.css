@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container h1{
+    margin: 30px;
+}
+
+.itens{
+    text-align: center;
+}
+
+#item{
+    width: 200px;
+    height: 30px;
+}
+
+#quant, #valor{width: 70px; height: 30px;}
+
+button{width: 70px; height: 30px;}
+
+.lista{margin-top: 40px;}
+
+table{ 
+    width: 450px;
+    margin: 20px auto;
+}
+
+th{background-color: aqua; margin: 10px auto; padding: 10px;}
