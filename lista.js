@@ -31,7 +31,12 @@ botaoAdd.addEventListener('click', () => {
         campoTotal.innerHTML = valorTotal;
         itensTotal = itensTotal + parseFloat(quantItem[i].innerHTML);
         campoItens.innerHTML = itensTotal;
+        item.value = "";
+        quantidade.value = "";
+        valor.value = "";
     }
+
+    
 })
 
 
