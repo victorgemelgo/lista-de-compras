@@ -12,31 +12,38 @@ let lista = document.getElementById('adicionados');
 
 
 botaoAdd.addEventListener('click', () => {
-    var listaAtual = lista.innerHTML;
 
-    lista.innerHTML = listaAtual + "<tr class='itens'><td>" + item.value + "</td>" + "<td class='quant-item'>" + quantidade.value + "</td>" + "<td class='total'>" + valor.value + "</td></tr>";
+    if (item.value === "" | quantidade.value === "" | valor.value === "") {
+        alert('Preencha todos os campos')
+    } else {
+        var listaAtual = lista.innerHTML;
 
-    let total = document.querySelectorAll('.total');
-    let quantItem = document.querySelectorAll('.quant-item');
-    let i;
-    let campoTotal = document.getElementById('valor-total');
-    let campoItens = document.getElementById('itens-total');
-    let valorTotal = 0;
-    let itensTotal = 0;
+        lista.innerHTML = listaAtual + "<tr class='itens'><td>" + item.value + "</td>" + "<td class='quant-item'>" + quantidade.value + "</td>" + "<td class='total'>" + valor.value + "</td></tr>";
 
-    for (i = 0; i < total.length; i++) {
-        
-        
-        valorTotal = valorTotal + parseFloat(total[i].innerHTML) * parseFloat(quantItem[i].innerHTML);
-        campoTotal.innerHTML = valorTotal;
-        itensTotal = itensTotal + parseFloat(quantItem[i].innerHTML);
-        campoItens.innerHTML = itensTotal;
-        item.value = "";
-        quantidade.value = "";
-        valor.value = "";
+        let total = document.querySelectorAll('.total');
+        let quantItem = document.querySelectorAll('.quant-item');
+        let i;
+        let campoTotal = document.getElementById('valor-total');
+        let campoItens = document.getElementById('itens-total');
+        let valorTotal = 0;
+        let itensTotal = 0;
+
+        for (i = 0; i < total.length; i++) {
+
+
+            valorTotal = valorTotal + parseFloat(total[i].innerHTML) * parseFloat(quantItem[i].innerHTML);
+            campoTotal.innerHTML = valorTotal;
+            itensTotal = itensTotal + parseFloat(quantItem[i].innerHTML);
+            campoItens.innerHTML = itensTotal;
+            item.value = "";
+            quantidade.value = "";
+            valor.value = "";
+        }
+
+
     }
 
-    
+
 })
 
 

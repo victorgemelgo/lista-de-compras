@@ -1,47 +1,108 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     background-color: darkcyan;
     width: 100%;
     height: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.container{
+.container {
     width: 500px;
     height: 100%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
     background-color: white;
 }
 
-.container h1{
+.container h1 {
     margin: 30px;
 }
 
-.itens{
+.itens {
     text-align: center;
 }
 
-#item{
+#item {
     width: 220px;
     height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey
 }
 
-#quant, #valor{width: 70px; height: 30px;}
+#quant,
+#valor {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
 
-button{width: 70px; height: 30px;}
+button {
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: white;
+}
 
-.lista{margin-top: 40px;}
+.lista {
+    margin-top: 40px;
+}
 
-table{ 
+#tabela{
+    height: 330px;
+    overflow: auto;
+}
+
+
+#tabela::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  #tabela::-webkit-scrollbar-track {
+    background: white;       /* color of the tracking area */
+  }
+  
+  #tabela::-webkit-scrollbar-thumb {
+    background-color: #3ec1d5;   /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
+  }
+
+
+
+table {
     width: 450px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
-th{background-color: aqua; margin: 10px auto; padding: 10px;}
+th {
+    background-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+td{
+    width: 200px;
+    margin-right: 10px;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 15pt;
+}
+
+p span{
+    font-weight: bolder;
+    color: darkcyan;
+}

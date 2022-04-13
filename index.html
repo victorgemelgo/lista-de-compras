@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>lista de compras</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="container">
         <h1>Lista de Compras</h1>
         <div class="inputs">
@@ -19,19 +21,25 @@
         </div>
 
         <div class="lista">
-            <table id="adicionados">
+            <table>
                 <tr>
                     <th>Itens</th>
                     <th>Quant</th>
                     <th>Valor</th>
                 </tr>
             </table>
+            <div id="tabela">
+                <table id="adicionados">
+
+                </table>
+            </div>
             <p>Quantidade de itens: <span id="itens-total">0</span></p>
-            <p>Valor Total: <span id="valor-total">0.0</span></p>
+            <p>Valor Total: R$<span id="valor-total">0.0</span></p>
         </div>
     </div>
 
 
     <script src="lista.js"></script>
 </body>
+
 </html>
